@@ -11,7 +11,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello Bangladesh</h1>
+    <div class="calculator">
+        <form action="" name="form">
+            <input type="text" name="display" id="" value="" class="form-control main-bar" placeholder="Please Give Inform...">
+            <div class="button-area">
+            
+                <div class="line">
+                    <input type="button" value="7" class="btn btn-primary" name="btn" onclick="calculate(this.value)">
+                    <input type="button" value="8" class="btn btn-primary" name="btn" onclick="calculate(this.value)">
+                    <input type="button" value="9" class="btn btn-primary" name="btn"onclick="calculate(this.value)">
+                    <input type="button" value="+" class="btn btn-warning" name="btn"onclick="calculate(this.value)">
+                </div>
+                <div class="line">
+                    <input type="button" value="4" class="btn btn-primary" name="btn"onclick="calculate(this.value)">
+                    <input type="button" value="5" class="btn btn-primary" name="btn"onclick="calculate(this.value)">
+                    <input type="button" value="6" class="btn btn-primary" name="btn"onclick="calculate(this.value)">
+                    <input type="button" value="*" class="btn btn-warning" name="btn"onclick="calculate(this.value)">
+                </div>
+                <div class="line">
+                    <input type="button" value="1" class="btn btn-primary" name="btn"onclick="calculate(this.value)">
+                    <input type="button" value="2" class="btn btn-primary" name="btn"onclick="calculate(this.value)">
+                    <input type="button" value="3" class="btn btn-primary" name="btn"onclick="calculate(this.value)">
+                    <input type="button" value="-" class="btn btn-warning" name="btn"onclick="calculate(this.value)">
+                </div>
+                <div class="line">
+                    <input type="button" value="0" class="btn btn-primary" name="btn"onclick="calculate(this.value)">
+                    <input type="button" value="00" class="btn btn-primary" name="btn"onclick="calculate(this.value)">
+                    <input type="button" value="." class="btn btn-primary" name="btn"onclick="calculate(this.value)">
+                    <input type="button" value="/" class="btn btn-warning" name="btn"onclick="calculate(this.value)">
+                </div>
+                <div class="last">
+                    <input type="button" value="C" class="btn btn-warning last_btn" name="btn" onclick="display.value= null">
+                    <input type="button" value="=" class="btn btn-warning last_btn" name="btn"  onclick="display.value=eval(display.value)">
+
+                </div>
+            </div>
+        </form>
+        <script>
+            function calculate(num){
+                form.display.value=form.display.value+num;
+
+            }
+        </script>
+    </div>
 
     
 
